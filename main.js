@@ -33,6 +33,19 @@ function preload()
 function draw()
 {
 image(video, 0,0,600,530);
+fill("#fa0707");
+stroke("#0d0d0d");
+circle(leftwristX,leftwristY,20);
+
+song_variable.isPlaying();
+
+if(score_leftwrist > 0.2)
+{
+    circle(leftwristX,leftwristY,20);
+}
+
+song_variable.stop();
+
 }
 
 function gotPoses(results)
